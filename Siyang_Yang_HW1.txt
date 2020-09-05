@@ -1,52 +1,54 @@
 
-An error occurred while loading ./in.
-Failure/Error: __send__(method, file)
+Ruby intro part 1
+  #sum
+    should be defined
+    returns correct sum [20 points]
+    works on the empty array [10 points]
+  #max_2_sum
+    should be defined
+    returns the correct sum [7 points]
+    works even if 2 largest values are the same [3 points]
+    returns zero if array is empty [10 points]
+    returns value of the element if just one element [10 points]
+  #sum_to_n
+    should be defined
+    returns true when any two elements sum to the second argument [30 points]
+    returns false for any single element array [5 points]
+    returns false for an empty array [5 points]
 
-LoadError:
-  cannot load such file -- /home/ubuntu/csce606/hw-ruby-intro/in
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb:2034:in `load'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb:2034:in `load_file_handling_errors'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb:1560:in `block in load_spec_files'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb:1558:in `each'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb:1558:in `load_spec_files'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:98:in `setup'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:86:in `run'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:71:in `run'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:45:in `invoke'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/exe/rspec:4:in `<top (required)>'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/bin/rspec:23:in `load'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/bin/rspec:23:in `<main>'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:24:in `eval'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:24:in `<main>'
-# 
-#   Showing full backtrace because every line was filtered out.
-#   See docs for RSpec::Configuration#backtrace_exclusion_patterns and
-#   RSpec::Configuration#backtrace_inclusion_patterns for more information.
+#hello
+  should be defined
+  The hello method returns the correct string [30 points]
 
-An error occurred while loading ./csce606/hw-ruby-intro.
-Failure/Error: __send__(method, file)
+#starts_with_consonant?
+  should be defined
+  classifies true cases [10 points]
+  classifies false cases [10 points]
+  works on the empty string [5 points]
+  works on nonletters [5 points]
 
-LoadError:
-  cannot load such file -- /home/ubuntu/csce606/hw-ruby-intro/csce606/hw-ruby-intro
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb:2034:in `load'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb:2034:in `load_file_handling_errors'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb:1560:in `block in load_spec_files'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb:1558:in `each'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb:1558:in `load_spec_files'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:98:in `setup'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:86:in `run'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:71:in `run'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb:45:in `invoke'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/gems/rspec-core-3.8.0/exe/rspec:4:in `<top (required)>'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/bin/rspec:23:in `load'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/bin/rspec:23:in `<main>'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:24:in `eval'
-# /home/ubuntu/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:24:in `<main>'
-# 
-#   Showing full backtrace because every line was filtered out.
-#   See docs for RSpec::Configuration#backtrace_exclusion_patterns and
-#   RSpec::Configuration#backtrace_inclusion_patterns for more information.
+#binary_multiple_of_4?
+  should be defined
+  classifies valid binary numbers [30 points]
+  rejects invalid binary numbers [10 points]
 
-Finished in 0.00024 seconds (files took 0.26439 seconds to load)
-0 examples, 0 failures, 2 errors occurred outside of examples
+BookInStock
+  should be defined
+  getters and setters
+    should set ISBN [10 points]
+    should set price [10 points]
+    should be able to change ISBN [10 points]
+    should be able to change price [10 points]
+  constructor
+    should reject invalid ISBN number [10 points]
+    should reject zero price [10 points]
+    should reject negative price [10 points]
+  #price_as_string
+    should be defined
+    should display 33.95 as "$33.95" [10 points]
+    should display 1.1 as $1.10 [10 points]
+    should display 20 as $20.00 [10 points]
+
+Finished in 0.0111 seconds (files took 0.09198 seconds to load)
+34 examples, 0 failures
 
