@@ -74,7 +74,7 @@ def binary_multiple_of_4? s
   #/pattern/
   #* repeat 0 or more times
   #(00) matches
-  if s =~ /(^[01]*(00)$|^0$)/
+  if s =~ /(^[01]*(00)$)/ || /^0$/.match(s)
     return true
   end
   return false
@@ -87,6 +87,13 @@ class BookInStock
   
   attr_accessor :isbn
   attr_accessor :price
+  # def isbn
+  #   @isbn
+  # end
+  
+  # def price
+  #   @price
+  # end
   
   def initialize(isbn, price)
     if isbn.empty? || price <= 0
@@ -95,14 +102,6 @@ class BookInStock
     @isbn = isbn
     @price = price
   end
-  
-  # def isbn
-  #   @isbn
-  # end
-  
-  # def price
-  #   @price
-  # end
   
   def price_as_string
     "$#{'%.2f' % @price}"
